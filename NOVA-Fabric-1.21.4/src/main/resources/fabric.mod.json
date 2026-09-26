@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "nova_client",
+  "version": "${version}",
+  "name": "NOVA",
+  "description": "Client-side NOVA menu interface for Minecraft 1.21.4.",
+  "authors": [
+    "NOVA"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/nova_client/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.nova.client.NovaClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "mixins": [
+    "nova_client.mixins.json"
+  ]
+}
